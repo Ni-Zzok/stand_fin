@@ -1,0 +1,11 @@
+mode,total_requests,success_count,conflict_count,error_count,avg_response_ms,max_response_ms,scenario,repetition,request_batch_ms,completion_ms,worker_completed,worker_failed
+centralized_sync,20,20,0,0,7.107,16.62,a,1,142.456,143.871,0,0
+hybrid_async,20,20,0,0,7.302,28.196,a,1,146.342,149.741,40,0
+hybrid_async,20,20,0,0,6.194,6.71,a,2,124.171,127.73,40,0
+centralized_sync,20,20,0,0,5.737,6.33,a,2,114.996,116.279,0,0
+centralized_sync,20,20,0,0,5.698,6.406,a,3,114.238,115.433,0,0
+hybrid_async,20,20,0,0,7.169,30.612,a,3,143.655,147.074,40,0
+hybrid_async,20,20,0,0,5.96,6.518,a,4,119.478,122.961,40,0
+centralized_sync,20,20,0,0,5.858,7.153,a,4,117.417,118.619,0,0
+centralized_sync,20,20,0,0,5.865,7.408,a,5,117.546,118.768,0,0
+hybrid_async,20,20,0,0,5.929,6.205,a,5,118.84,121.933,40,0

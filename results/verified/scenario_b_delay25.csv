@@ -1,0 +1,3 @@
+mode,total_requests,success_count,conflict_count,error_count,avg_response_ms,max_response_ms,scenario,repetition,request_batch_ms,completion_ms,worker_completed,worker_failed
+centralized_sync,20,7,13,0,68.863,155.199,b,1,156.624,158.371,0,0
+hybrid_async,20,7,13,0,86.594,170.47,b,1,174.912,466.937,14,0

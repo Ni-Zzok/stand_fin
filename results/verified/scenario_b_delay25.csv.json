@@ -1,0 +1,1086 @@
+{
+  "recorded_at_utc": "2026-11-09T14:41:00.516312",
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "revision": "72d963823aa1eb942cbbbfb8d187f6ca477ec741",
+  "working_tree_dirty": true,
+  "base_url": "http://127.0.0.1:18000",
+  "worker_delay_ms": 25,
+  "source_sha256": {
+    "app/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "app/api/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "app/api/bookings.py": "bdb3dce7a7805afd567a031c40cc209cfdb129af3cebcb721aa31f8c1d4ab839",
+    "app/api/experiments.py": "2cc3cd958799ce469d6b67095c109b0b52da013250c70e20e3d829fc8ba4001f",
+    "app/api/rooms.py": "8daa6e5778b5e094b4800b58c7aa3c7b19c8d69f4d94c5c944304fe430a4e80d",
+    "app/config.py": "e22e14fd92c5d16371749f29b7f74388a269aa44e7a182845d225735a0449a8a",
+    "app/coordination.py": "cdbe23c8c39d620d93d34899e1bf5b634a01bfe95df5b2875f21e23013c1a6fe",
+    "app/db.py": "f0083db6169c583c0a00319772689c4b244f45cea78b3e0390027e25c9768241",
+    "app/main.py": "13509f786a8463cfae915bb24150a3778952634d3220536391fa19622129682d",
+    "app/models.py": "f58eb5df798265e9eddd9c3af304fbcde5c18bfdaf4b7bdc33009f01d224d8cf",
+    "app/queue_manager.py": "98b615c69f5c061cef0b9004d927261c6370725907925438ba949cf7c9a41f24",
+    "app/repositories.py": "00d760e34839f2f53fafc9a74de162c01db11e1aa95dbc2275eb4f23208dfa9d",
+    "app/schemas.py": "ca8679984da5a968ee10eeed744979098b238298452a83ecb8a4e5e419873567",
+    "app/services.py": "76731c06b82ceccda4e0f8f4484340d11f0d3d69cddbf22b4ecca78b4fdfba47",
+    "app/worker.py": "489f61057fa1b88fb68b643cffcdfe43fa899af984c1ab82be5b099bb693c53f",
+    "load/compare_modes.py": "dd93d7a52f5ae5bdd1b3ce156de3af3ada0d65b11fa2d04454b2cd17d0ec9737",
+    "requirements.txt": "5f807a5605344d0a25124d0b23e5bd84d43c817023e8ba0f9ccff6e88fe1f536"
+  },
+  "runs": [
+    {
+      "stats": {
+        "mode": "centralized_sync",
+        "total_requests": 20,
+        "success_count": 7,
+        "conflict_count": 13,
+        "error_count": 0,
+        "avg_response_ms": 68.863,
+        "max_response_ms": 155.199,
+        "scenario": "b",
+        "repetition": 1,
+        "request_batch_ms": 156.624,
+        "completion_ms": 158.371,
+        "worker_completed": 0,
+        "worker_failed": 0
+      },
+      "responses": [
+        {
+          "status": 200,
+          "elapsed_ms": 20.91820000350708,
+          "body": {
+            "request_id": "9106ceca-7fa2-440f-8022-a3872d756a0d",
+            "booking": {
+              "id": 609,
+              "room_id": 247,
+              "user_id": 247,
+              "start_time": "2026-04-20T10:00:00",
+              "end_time": "2026-04-20T11:00:00",
+              "status": "confirmed",
+              "mode": "centralized_sync",
+              "created_at": "2026-11-09T17:40:59.822275"
+            }
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 28.493400001025293,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 34.43459999834886,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 40.01369999605231,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 45.666300000448246,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 52.88000000291504,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 56.87169999873731,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 62.162499998521525,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 200,
+          "elapsed_ms": 64.9663000003784,
+          "body": {
+            "request_id": "ca8f1c2d-39b7-4a47-9b0a-5dd8674ebac7",
+            "booking": {
+              "id": 610,
+              "room_id": 248,
+              "user_id": 248,
+              "start_time": "2026-04-21T02:00:00",
+              "end_time": "2026-04-21T03:00:00",
+              "status": "confirmed",
+              "mode": "centralized_sync",
+              "created_at": "2026-11-09T17:40:59.864690"
+            }
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 66.63040000421461,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 70.64199999877019,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 76.43470000039088,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 200,
+          "elapsed_ms": 78.58549999946263,
+          "body": {
+            "request_id": "4da81bfd-b078-403c-8d14-7c3bdb38f476",
+            "booking": {
+              "id": 611,
+              "room_id": 249,
+              "user_id": 249,
+              "start_time": "2026-04-21T00:00:00",
+              "end_time": "2026-04-21T01:00:00",
+              "status": "confirmed",
+              "mode": "centralized_sync",
+              "created_at": "2026-11-09T17:40:59.877436"
+            }
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 81.57299999584211,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 84.21710000402527,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 200,
+          "elapsed_ms": 86.03099999891128,
+          "body": {
+            "request_id": "879bc048-7e30-4a87-b19b-b62693a8f4c5",
+            "booking": {
+              "id": 613,
+              "room_id": 248,
+              "user_id": 248,
+              "start_time": "2026-04-21T05:00:00",
+              "end_time": "2026-04-21T06:00:00",
+              "status": "confirmed",
+              "mode": "centralized_sync",
+              "created_at": "2026-11-09T17:40:59.889042"
+            }
+          }
+        },
+        {
+          "status": 200,
+          "elapsed_ms": 86.43960000335937,
+          "body": {
+            "request_id": "12888c30-dcf8-445f-80e8-d986a22fc7ed",
+            "booking": {
+              "id": 612,
+              "room_id": 249,
+              "user_id": 249,
+              "start_time": "2026-04-21T03:00:00",
+              "end_time": "2026-04-21T04:00:00",
+              "status": "confirmed",
+              "mode": "centralized_sync",
+              "created_at": "2026-11-09T17:40:59.884376"
+            }
+          }
+        },
+        {
+          "status": 200,
+          "elapsed_ms": 90.39620000112336,
+          "body": {
+            "request_id": "858cced7-dfbb-4412-a8ab-356e0e9e71e9",
+            "booking": {
+              "id": 614,
+              "room_id": 247,
+              "user_id": 247,
+              "start_time": "2026-04-21T01:00:00",
+              "end_time": "2026-04-21T02:00:00",
+              "status": "confirmed",
+              "mode": "centralized_sync",
+              "created_at": "2026-11-09T17:40:59.882760"
+            }
+          }
+        },
+        {
+          "status": 200,
+          "elapsed_ms": 94.71070000290638,
+          "body": {
+            "request_id": "0b81498b-ab47-4727-b5c6-94db6b158d55",
+            "booking": {
+              "id": 615,
+              "room_id": 247,
+              "user_id": 247,
+              "start_time": "2026-04-21T04:00:00",
+              "end_time": "2026-04-21T05:00:00",
+              "status": "confirmed",
+              "mode": "centralized_sync",
+              "created_at": "2026-11-09T17:40:59.887343"
+            }
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 155.1988999999594,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        }
+      ],
+      "metrics": [
+        {
+          "id": 1575,
+          "request_id": "9106ceca-7fa2-440f-8022-a3872d756a0d",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.820657",
+          "finished_at": "2026-11-09T14:40:59.825643",
+          "duration_ms": 4,
+          "result": "success",
+          "notes": "booking_id=609"
+        },
+        {
+          "id": 1576,
+          "request_id": "3d51320d-ed5f-4c0f-ab7a-512c56e32b54",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.826645",
+          "finished_at": "2026-11-09T14:40:59.830643",
+          "duration_ms": 3,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1577,
+          "request_id": "187eba91-a81b-4ef1-9292-6fd43efbfd23",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.832643",
+          "finished_at": "2026-11-09T14:40:59.839645",
+          "duration_ms": 7,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1578,
+          "request_id": "00c72e2a-feb4-4683-9cb7-c0c893ea4fbf",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.832643",
+          "finished_at": "2026-11-09T14:40:59.847654",
+          "duration_ms": 15,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1579,
+          "request_id": "e4751cf1-a819-4728-97e9-5f9ee3c27978",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.832643",
+          "finished_at": "2026-11-09T14:40:59.852652",
+          "duration_ms": 20,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1580,
+          "request_id": "b5ac2fe7-fcbb-452b-b9c8-474733fde7d3",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.834645",
+          "finished_at": "2026-11-09T14:40:59.861164",
+          "duration_ms": 26,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1581,
+          "request_id": "2562413a-cffa-488c-b0c1-916dd1318dc4",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.838644",
+          "finished_at": "2026-11-09T14:40:59.869738",
+          "duration_ms": 31,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1582,
+          "request_id": "ca8f1c2d-39b7-4a47-9b0a-5dd8674ebac7",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.859164",
+          "finished_at": "2026-11-09T14:40:59.875737",
+          "duration_ms": 16,
+          "result": "success",
+          "notes": "booking_id=610"
+        },
+        {
+          "id": 1583,
+          "request_id": "c217aeab-aba6-4eba-a2b3-6709ccbafd10",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.843651",
+          "finished_at": "2026-11-09T14:40:59.875737",
+          "duration_ms": 32,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1584,
+          "request_id": "75eb604d-f484-43a4-8b15-29868f9f78c1",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.850652",
+          "finished_at": "2026-11-09T14:40:59.879738",
+          "duration_ms": 29,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1585,
+          "request_id": "e8a97d8f-3682-4b0f-8f03-563d02eeea8d",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.834645",
+          "finished_at": "2026-11-09T14:40:59.885740",
+          "duration_ms": 51,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1586,
+          "request_id": "4da81bfd-b078-403c-8d14-7c3bdb38f476",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.853651",
+          "finished_at": "2026-11-09T14:40:59.886737",
+          "duration_ms": 33,
+          "result": "success",
+          "notes": "booking_id=611"
+        },
+        {
+          "id": 1587,
+          "request_id": "d8b65981-7704-45e0-9a72-7cf4dd7d1ebb",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.841644",
+          "finished_at": "2026-11-09T14:40:59.889736",
+          "duration_ms": 48,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1588,
+          "request_id": "ab5a2f64-5fb2-42bf-886c-2bbe45bbfec0",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.838644",
+          "finished_at": "2026-11-09T14:40:59.895736",
+          "duration_ms": 57,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1589,
+          "request_id": "12888c30-dcf8-445f-80e8-d986a22fc7ed",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.861164",
+          "finished_at": "2026-11-09T14:40:59.896744",
+          "duration_ms": 35,
+          "result": "success",
+          "notes": "booking_id=612"
+        },
+        {
+          "id": 1590,
+          "request_id": "879bc048-7e30-4a87-b19b-b62693a8f4c5",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.865737",
+          "finished_at": "2026-11-09T14:40:59.898738",
+          "duration_ms": 33,
+          "result": "success",
+          "notes": "booking_id=613"
+        },
+        {
+          "id": 1591,
+          "request_id": "540dc81f-d6f0-450c-ac5b-0debfc74d717",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.846651",
+          "finished_at": "2026-11-09T14:40:59.900736",
+          "duration_ms": 54,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1592,
+          "request_id": "858cced7-dfbb-4412-a8ab-356e0e9e71e9",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.855651",
+          "finished_at": "2026-11-09T14:40:59.905738",
+          "duration_ms": 50,
+          "result": "success",
+          "notes": "booking_id=614"
+        },
+        {
+          "id": 1593,
+          "request_id": "0b81498b-ab47-4727-b5c6-94db6b158d55",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.864737",
+          "finished_at": "2026-11-09T14:40:59.911737",
+          "duration_ms": 47,
+          "result": "success",
+          "notes": "booking_id=615"
+        },
+        {
+          "id": 1594,
+          "request_id": "a701830f-e01d-41cc-b536-1f891baa64c6",
+          "scenario": "scenario_b_parallel",
+          "mode": "centralized_sync",
+          "started_at": "2026-11-09T14:40:59.842646",
+          "finished_at": "2026-11-09T14:40:59.971260",
+          "duration_ms": 128,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        }
+      ]
+    },
+    {
+      "stats": {
+        "mode": "hybrid_async",
+        "total_requests": 20,
+        "success_count": 7,
+        "conflict_count": 13,
+        "error_count": 0,
+        "avg_response_ms": 86.594,
+        "max_response_ms": 170.47,
+        "scenario": "b",
+        "repetition": 1,
+        "request_batch_ms": 174.912,
+        "completion_ms": 466.937,
+        "worker_completed": 14,
+        "worker_failed": 0
+      },
+      "responses": [
+        {
+          "status": 200,
+          "elapsed_ms": 37.75809999933699,
+          "body": {
+            "request_id": "31f6f929-b1a9-4f1d-b664-120baac6a11c",
+            "booking": {
+              "id": 616,
+              "room_id": 250,
+              "user_id": 250,
+              "start_time": "2026-04-20T10:00:00",
+              "end_time": "2026-04-20T11:00:00",
+              "status": "confirmed",
+              "mode": "hybrid_async",
+              "created_at": "2026-11-09T17:41:00.000573"
+            }
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 46.733499999390915,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 53.17820000345819,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 54.962199996225536,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 63.461999998253305,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 71.30209999741055,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 200,
+          "elapsed_ms": 70.27039999957196,
+          "body": {
+            "request_id": "69223659-e5b6-4a5c-9f41-615d88ab2cae",
+            "booking": {
+              "id": 617,
+              "room_id": 251,
+              "user_id": 251,
+              "start_time": "2026-04-21T05:00:00",
+              "end_time": "2026-04-21T06:00:00",
+              "status": "confirmed",
+              "mode": "hybrid_async",
+              "created_at": "2026-11-09T17:41:00.043224"
+            }
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 77.76490000105696,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 200,
+          "elapsed_ms": 76.9192000007024,
+          "body": {
+            "request_id": "23b87c7e-47fc-4dd4-9339-180a47dcb5ea",
+            "booking": {
+              "id": 618,
+              "room_id": 252,
+              "user_id": 252,
+              "start_time": "2026-04-21T03:00:00",
+              "end_time": "2026-04-21T04:00:00",
+              "status": "confirmed",
+              "mode": "hybrid_async",
+              "created_at": "2026-11-09T17:41:00.044191"
+            }
+          }
+        },
+        {
+          "status": 200,
+          "elapsed_ms": 80.43460000044433,
+          "body": {
+            "request_id": "516e0df2-1828-4d34-87e4-2bfd73ad810a",
+            "booking": {
+              "id": 619,
+              "room_id": 252,
+              "user_id": 252,
+              "start_time": "2026-04-21T00:00:00",
+              "end_time": "2026-04-21T01:00:00",
+              "status": "confirmed",
+              "mode": "hybrid_async",
+              "created_at": "2026-11-09T17:41:00.057353"
+            }
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 83.92079999612179,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 200,
+          "elapsed_ms": 81.93279999977676,
+          "body": {
+            "request_id": "43eabb24-815c-4b54-a26a-e2e1ceed4374",
+            "booking": {
+              "id": 620,
+              "room_id": 251,
+              "user_id": 251,
+              "start_time": "2026-04-21T02:00:00",
+              "end_time": "2026-04-21T03:00:00",
+              "status": "confirmed",
+              "mode": "hybrid_async",
+              "created_at": "2026-11-09T17:41:00.063453"
+            }
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 88.04550000058953,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 89.2535000020871,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 92.09790000022622,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 94.78579999995418,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 98.48829999828013,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 409,
+          "elapsed_ms": 133.52319999830797,
+          "body": {
+            "detail": "Booking conflict for selected room and time interval"
+          }
+        },
+        {
+          "status": 200,
+          "elapsed_ms": 166.57770000165328,
+          "body": {
+            "request_id": "83318638-9606-44d3-95cf-467319fffa50",
+            "booking": {
+              "id": 621,
+              "room_id": 250,
+              "user_id": 250,
+              "start_time": "2026-04-21T04:00:00",
+              "end_time": "2026-04-21T05:00:00",
+              "status": "confirmed",
+              "mode": "hybrid_async",
+              "created_at": "2026-11-09T17:41:00.155943"
+            }
+          }
+        },
+        {
+          "status": 200,
+          "elapsed_ms": 170.4704000003403,
+          "body": {
+            "request_id": "21d9ff7d-ab30-4cd2-9e23-84ebc256f364",
+            "booking": {
+              "id": 622,
+              "room_id": 250,
+              "user_id": 250,
+              "start_time": "2026-04-21T01:00:00",
+              "end_time": "2026-04-21T02:00:00",
+              "status": "confirmed",
+              "mode": "hybrid_async",
+              "created_at": "2026-11-09T17:41:00.156120"
+            }
+          }
+        }
+      ],
+      "metrics": [
+        {
+          "id": 1595,
+          "request_id": "31f6f929-b1a9-4f1d-b664-120baac6a11c",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:40:59.999858",
+          "finished_at": "2026-11-09T14:41:00.004847",
+          "duration_ms": 4,
+          "result": "success",
+          "notes": "booking_id=616"
+        },
+        {
+          "id": 1596,
+          "request_id": "8f13c0a9-7508-4903-8f0f-c959de88c870",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:40:59.999858",
+          "finished_at": "2026-11-09T14:41:00.016850",
+          "duration_ms": 16,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1597,
+          "request_id": "e380ca6a-f96d-49ab-bca2-04012012fc6a",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.001846",
+          "finished_at": "2026-11-09T14:41:00.026848",
+          "duration_ms": 25,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1598,
+          "request_id": "4d994308-dccf-4f03-bbdd-11406d6693b6",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.003846",
+          "finished_at": "2026-11-09T14:41:00.037848",
+          "duration_ms": 34,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1599,
+          "request_id": "56685956-fbca-41e7-b138-e406bb208e04",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.003846",
+          "finished_at": "2026-11-09T14:41:00.050848",
+          "duration_ms": 47,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1600,
+          "request_id": "69223659-e5b6-4a5c-9f41-615d88ab2cae",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.036848",
+          "finished_at": "2026-11-09T14:41:00.051847",
+          "duration_ms": 14,
+          "result": "success",
+          "notes": "booking_id=617"
+        },
+        {
+          "id": 1601,
+          "request_id": "23b87c7e-47fc-4dd4-9339-180a47dcb5ea",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.010846",
+          "finished_at": "2026-11-09T14:41:00.057848",
+          "duration_ms": 47,
+          "result": "success",
+          "notes": "booking_id=618"
+        },
+        {
+          "id": 1602,
+          "request_id": "833a21ea-db7b-4aa0-b5d2-62658f00daea",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.019848",
+          "finished_at": "2026-11-09T14:41:00.058859",
+          "duration_ms": 39,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1603,
+          "request_id": "fbd1e197-71c4-4429-81c2-c9186ebdfee9",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.026848",
+          "finished_at": "2026-11-09T14:41:00.066847",
+          "duration_ms": 39,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1604,
+          "request_id": "516e0df2-1828-4d34-87e4-2bfd73ad810a",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.042847",
+          "finished_at": "2026-11-09T14:41:00.068845",
+          "duration_ms": 25,
+          "result": "success",
+          "notes": "booking_id=619"
+        },
+        {
+          "id": 1605,
+          "request_id": "31f6f929-b1a9-4f1d-b664-120baac6a11c",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.025847",
+          "finished_at": "2026-11-09T14:41:00.069845",
+          "duration_ms": 43,
+          "result": "worker_task_success",
+          "notes": "processed:audit; includes queue wait and delay"
+        },
+        {
+          "id": 1606,
+          "request_id": "43eabb24-815c-4b54-a26a-e2e1ceed4374",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.033847",
+          "finished_at": "2026-11-09T14:41:00.071846",
+          "duration_ms": 37,
+          "result": "success",
+          "notes": "booking_id=620"
+        },
+        {
+          "id": 1607,
+          "request_id": "6e152290-22a3-49e8-aae4-bbfc8322f9c6",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.007847",
+          "finished_at": "2026-11-09T14:41:00.074847",
+          "duration_ms": 67,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1608,
+          "request_id": "a01c7fdf-cd70-4e89-a00f-a529bc1223fd",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.011846",
+          "finished_at": "2026-11-09T14:41:00.077846",
+          "duration_ms": 66,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1609,
+          "request_id": "885c1cbf-eb0d-467d-8ef2-7a0fbc95506a",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.040847",
+          "finished_at": "2026-11-09T14:41:00.080845",
+          "duration_ms": 39,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1610,
+          "request_id": "a9f943fa-78ed-4ed0-80ff-91b1b52d14cf",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.013848",
+          "finished_at": "2026-11-09T14:41:00.084847",
+          "duration_ms": 70,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1611,
+          "request_id": "31f6f929-b1a9-4f1d-b664-120baac6a11c",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.025847",
+          "finished_at": "2026-11-09T14:41:00.085846",
+          "duration_ms": 59,
+          "result": "worker_task_success",
+          "notes": "processed:notification; includes queue wait and delay"
+        },
+        {
+          "id": 1612,
+          "request_id": "c0bf7759-02c1-494a-ba15-5fc19a260874",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.029848",
+          "finished_at": "2026-11-09T14:41:00.087849",
+          "duration_ms": 58,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1613,
+          "request_id": "73962f95-2d9c-4763-9230-cde74d529900",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.039848",
+          "finished_at": "2026-11-09T14:41:00.091385",
+          "duration_ms": 51,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1614,
+          "request_id": "3076fb41-e881-4e15-9712-dbc5e7a6169d",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.005846",
+          "finished_at": "2026-11-09T14:41:00.127122",
+          "duration_ms": 121,
+          "result": "conflict",
+          "notes": "overlap_detected"
+        },
+        {
+          "id": 1615,
+          "request_id": "69223659-e5b6-4a5c-9f41-615d88ab2cae",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.065846",
+          "finished_at": "2026-11-09T14:41:00.128121",
+          "duration_ms": 62,
+          "result": "worker_task_success",
+          "notes": "processed:audit; includes queue wait and delay"
+        },
+        {
+          "id": 1616,
+          "request_id": "83318638-9606-44d3-95cf-467319fffa50",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.031846",
+          "finished_at": "2026-11-09T14:41:00.159182",
+          "duration_ms": 127,
+          "result": "success",
+          "notes": "booking_id=621"
+        },
+        {
+          "id": 1617,
+          "request_id": "69223659-e5b6-4a5c-9f41-615d88ab2cae",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.065846",
+          "finished_at": "2026-11-09T14:41:00.160176",
+          "duration_ms": 94,
+          "result": "worker_task_success",
+          "notes": "processed:notification; includes queue wait and delay"
+        },
+        {
+          "id": 1618,
+          "request_id": "21d9ff7d-ab30-4cd2-9e23-84ebc256f364",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.020847",
+          "finished_at": "2026-11-09T14:41:00.163184",
+          "duration_ms": 142,
+          "result": "success",
+          "notes": "booking_id=622"
+        },
+        {
+          "id": 1619,
+          "request_id": "23b87c7e-47fc-4dd4-9339-180a47dcb5ea",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.072846",
+          "finished_at": "2026-11-09T14:41:00.165174",
+          "duration_ms": 92,
+          "result": "worker_task_success",
+          "notes": "processed:audit; includes queue wait and delay"
+        },
+        {
+          "id": 1620,
+          "request_id": "23b87c7e-47fc-4dd4-9339-180a47dcb5ea",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.072846",
+          "finished_at": "2026-11-09T14:41:00.209441",
+          "duration_ms": 136,
+          "result": "worker_task_success",
+          "notes": "processed:notification; includes queue wait and delay"
+        },
+        {
+          "id": 1621,
+          "request_id": "516e0df2-1828-4d34-87e4-2bfd73ad810a",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.075847",
+          "finished_at": "2026-11-09T14:41:00.239355",
+          "duration_ms": 163,
+          "result": "worker_task_success",
+          "notes": "processed:audit; includes queue wait and delay"
+        },
+        {
+          "id": 1622,
+          "request_id": "516e0df2-1828-4d34-87e4-2bfd73ad810a",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.075847",
+          "finished_at": "2026-11-09T14:41:00.270166",
+          "duration_ms": 194,
+          "result": "worker_task_success",
+          "notes": "processed:notification; includes queue wait and delay"
+        },
+        {
+          "id": 1623,
+          "request_id": "43eabb24-815c-4b54-a26a-e2e1ceed4374",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.078846",
+          "finished_at": "2026-11-09T14:41:00.301065",
+          "duration_ms": 222,
+          "result": "worker_task_success",
+          "notes": "processed:audit; includes queue wait and delay"
+        },
+        {
+          "id": 1624,
+          "request_id": "43eabb24-815c-4b54-a26a-e2e1ceed4374",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.078846",
+          "finished_at": "2026-11-09T14:41:00.331894",
+          "duration_ms": 253,
+          "result": "worker_task_success",
+          "notes": "processed:notification; includes queue wait and delay"
+        },
+        {
+          "id": 1625,
+          "request_id": "83318638-9606-44d3-95cf-467319fffa50",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.163184",
+          "finished_at": "2026-11-09T14:41:00.362954",
+          "duration_ms": 199,
+          "result": "worker_task_success",
+          "notes": "processed:audit; includes queue wait and delay"
+        },
+        {
+          "id": 1626,
+          "request_id": "83318638-9606-44d3-95cf-467319fffa50",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.163184",
+          "finished_at": "2026-11-09T14:41:00.394929",
+          "duration_ms": 231,
+          "result": "worker_task_success",
+          "notes": "processed:notification; includes queue wait and delay"
+        },
+        {
+          "id": 1627,
+          "request_id": "21d9ff7d-ab30-4cd2-9e23-84ebc256f364",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.166178",
+          "finished_at": "2026-11-09T14:41:00.426330",
+          "duration_ms": 260,
+          "result": "worker_task_success",
+          "notes": "processed:audit; includes queue wait and delay"
+        },
+        {
+          "id": 1628,
+          "request_id": "21d9ff7d-ab30-4cd2-9e23-84ebc256f364",
+          "scenario": "scenario_b_parallel",
+          "mode": "hybrid_async",
+          "started_at": "2026-11-09T14:41:00.166178",
+          "finished_at": "2026-11-09T14:41:00.457340",
+          "duration_ms": 291,
+          "result": "worker_task_success",
+          "notes": "processed:notification; includes queue wait and delay"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+mode,total_requests,success_count,conflict_count,avg_response_ms,max_response_ms
+centralized_sync,20,0,0,54.718,72.334
+hybrid_async,20,0,0,45.6,67.025

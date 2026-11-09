@@ -1,0 +1,13 @@
+scenario,secondary_delay_ms,mode,avg_response_ms,avg_success_response_ms,avg_conflict_response_ms,completion_ms
+a,0,centralized_sync,5.255,5.255,0.0,106.524
+a,0,hybrid_async,5.833,5.833,0.0,119.939
+b,0,centralized_sync,65.178,65.691,64.902,147.777
+b,0,hybrid_async,63.027,64.521,62.222,138.93
+a,10,centralized_sync,27.682,27.682,0.0,555.165
+a,10,hybrid_async,4.573,4.573,0.0,499.067
+b,10,centralized_sync,85.392,93.559,80.994,174.246
+b,10,hybrid_async,61.779,63.632,60.781,223.024
+a,30,centralized_sync,68.511,68.511,0.0,1371.85
+a,30,hybrid_async,5.133,5.133,0.0,1311.356
+b,30,centralized_sync,138.089,158.213,127.253,243.92
+b,30,hybrid_async,64.766,66.373,63.901,500.705
